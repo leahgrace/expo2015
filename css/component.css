@@ -79,9 +79,10 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	padding: 0 1em;
+	padding: 0 0em;
 	width: 50%;
 	cursor: pointer;
+
 	-webkit-transform: translateY(-50%) translateX(-50%);
 	transform: translateY(-50%) translateX(-50%);
 }
@@ -107,7 +108,7 @@ body {
 
 .intro-content h1 > span:first-child {
 	font-weight: 300;
-	font-size: 2em;
+	font-size: 1.75em;
 }
 
 .intro-content h1 > span:nth-child(2) {
@@ -476,7 +477,7 @@ body {
 	letter-spacing: 1px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1.35em;	
+	font-size: 1em;	
 }
 
 .side-left > nav a {
@@ -490,7 +491,7 @@ body {
 	letter-spacing: 1px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 1.35em;	
+	font-size: 1em;	
 }
 
 nav a {
@@ -1488,7 +1489,12 @@ nav a:focus {
 /* Begin Splash Screen */
 
 .splash {
-	background: #FFFFFF;
+	background:#FFFFFF;
+	background-image: url('../img/expo-logoshadow.png');;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:40%;
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -1496,8 +1502,6 @@ nav a:focus {
 	left: 0;
 	min-height: 360px;
 	z-index: 999;
-	background-size: cover;
-	background-attachment: fixed;
 	text-align: center;
 }
 
@@ -1541,8 +1545,37 @@ a.splash-arrow:hover {
 }
 
 .expo-logo {
-	background: url('../img/expo-logoshadow.png');
-	width: 1070px;
-	height: 922px;
+	background-image: url('../img/expo-logoshadow.png');
+	background-size: auto;
+	width:1070px;
+	height: 942px;
 	margin: 0 auto;
+	position: center;
+}
+/* Bio Pictures */
+.bio {
+	display:inline;
+	margin: 0 auto;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background: #47a3da;
+}
+.bio-content{
+display:inline;
+
+}
+.bio-content img {
+	max-width: 100%;
+	border-radius: 50%;
+	opacity: 0.6;
+}
+.bio-content h2 {
+	display: inline;
+	white-space: nowrap;
+	position: relative;
+	padding: 0.8em;
+}
+.bio-content h3 {
+
 }
