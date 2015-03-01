@@ -883,3 +883,9 @@ input[type=text]::-ms-clear {
 		transform: translate3d(0,0,0);
 	}
 }
+
+/* Begin Leah's stuff */
+.expo-logo-only {
+	width: 250px;
+	height: 250px;
+}
