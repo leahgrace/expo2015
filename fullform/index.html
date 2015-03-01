@@ -15,27 +15,28 @@
 		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 
 			<div class="fs-form-wrap" id="fs-form-wrap">
 				<div class="fs-title">
-					<h1>2015 Software Expo Survey</h1>
+				<img class="expo-logo-only" src="../img/expo-logo-only.png" />
 				</div>
 				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
-							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Joel Mullenix" required/>
+							<input class="fs-anim-lower" value="1" id="q1" name="q1" type="text" placeholder="Joel Mullenix" required/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q2">What's your major?</label>
-							<input class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="e.g. Computer Science" required/>
+							<input class="fs-anim-lower" value="2" id="q2" name="q2" type="text" placeholder="e.g. Computer Science" required/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q3">How many years have you attended the software expo?</label>
-							<input class="fs-mark fs-anim-lower" id="q3" name="q3" type="number" placeholder="e.g. 2" step="1" min="0"/>
+							<input class="fs-mark fs-anim-lower" value="3" id="q3" name="q3" type="number" placeholder="e.g. 2" step="1" min="0"/>
 						</li>
 						<!--li>
 							<label class="fs-field-label fs-anim-upper" for="mouth">Word of mouth</label>
@@ -53,14 +54,14 @@
 				         <input id="materials" name="hear" type="checkbox" value="materials"><br>				        
 						</li-->
 						<li data-input-trigger>
-							<label class="fs-field-label fs-anim-upper" for="q4" data-info="This will help us know what kind of service you need">Are you a Computer Science student (major or minor)?</label>
+							<label class="fs-field-label fs-anim-upper" value="4" for="q4" data-info="This will help us know what kind of service you need">Are you a Computer Science student (major or minor)?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
 								<span><input id="q4a" name="q4" type="radio" value="yes"/><label for="q4a" class="radio-conversion">Yes</label></span>
 								<span><input id="q4b" name="q4" type="radio" value="no"/><label for="q4b" class="radio-social">No</label></span>
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q5">How would you describe Peri?</label>
+							<label class="fs-field-label fs-anim-upper" value="5" for="q5">How would you describe College Life?</label>
 							<div class="fs-anim-lower">
 								<table>
 								<tr>
@@ -77,7 +78,7 @@
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q7">How would you describe Peri?</label>
+							<label class="fs-field-label fs-anim-upper" for="q7">How would you describe SHARE?</label>
 							<div class="fs-anim-lower">
 								<table>
 									<tr>
@@ -105,7 +106,7 @@
 							<textarea class="fs-anim-lower" id="q99" name="q99" placeholder="Describe here"></textarea>
 						</li>
 					</ol><!-- /fs-fields -->
-					<button class="fs-submit" type="submit">Send answers</button>
+					<button class="fs-submit" type="button">Send answers</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 		</div><!-- /container -->
