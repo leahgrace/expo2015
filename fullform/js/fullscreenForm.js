@@ -477,8 +477,9 @@
 
 /* Start JQuery AJAX */
 $('.fs-submit').click(function() {
-	alert("Should be success...")
-	$('.container').load("survey_submit.php");
+	var queryString = $('#myform').serialize();
+	//alert($('#myform').serialize());
+	$('.container').load("survey_submit.php", queryString);
 });
 
 
