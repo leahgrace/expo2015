@@ -3,7 +3,7 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	color: #fff;
+	color: #034E63;
 }
 
 .overview .fs-form-wrap {
@@ -242,9 +242,10 @@ button.fs-continue,
 	padding: 0 0 0.15em;
 	width: 100%;
 	border: none;
-	border-bottom: 2px solid rgba(0,0,0,0.2);
+	border-bottom: 1px solid;
+	border-bottom-color: #8AC97A;
 	background-color: transparent;
-	color: #fffed8;
+	color: #034E63;
 	text-overflow: ellipsis;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -268,7 +269,7 @@ button.fs-continue,
 }
 
 .fs-fields input:focus {
-	background-color: #3b3f45; /* Fixes chrome bug with placeholder */
+	background-color: #FFFFFF; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input:focus {
@@ -343,15 +344,15 @@ button.fs-continue,
 }
 
 .fs-fields .fs-radio-custom label.radio-mobile::after {
-	background-image: url(../img/mobile.svg);
+	background-image: url(../img/Computer-icon.png);
 }
 
-.fs-fields .fs-radio-custom label.radio-social::after {
-	background-image: url(../img/social.svg);
+.fs-fields .fs-radio-custom label.icon-paper::after {
+	background-image: url(../img/file-edit-icon.png);
 }
 
-.fs-fields .fs-radio-custom label.radio-conversion::after {
-	background-image: url(../img/conversion.svg);
+.fs-fields .fs-radio-custom label.icon-computer::after {
+	background-image: url(../img/computer-icon.png);
 }
 
 .fs-fields .fs-radio-custom label:hover::after,
@@ -506,7 +507,7 @@ button.fs-continue,
 
 .fs-nav-dots button:hover::before,
 .fs-nav-dots button.fs-dot-current::before {
-	background: #fffed8;
+	background: #8AC97A;
 }
 
 /* Progress bar */
@@ -625,7 +626,7 @@ button.fs-continue,
 button.fs-submit,
 button.fs-continue {
 	padding: 0.6em 1.5em;
-	border: 3px solid #232529;
+	border: 3px solid #8AC97A;
 	border-radius: 40px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.4);
@@ -653,7 +654,7 @@ button.fs-continue {
 button.fs-submit:hover,
 button.fs-submit:focus,
 button.fs-continue:hover {
-	background: #232529;
+	background: #8AC97A;
 	color: #fff;
 }
 
@@ -884,8 +885,15 @@ input[type=text]::-ms-clear {
 	}
 }
 
-/* Begin Leah's stuff */
+/* Begin Leah's stuff, Thanks Leah...*/
 .expo-logo-only {
-	width: 250px;
-	height: 250px;
+	position: relative;
+	width: 11%;
+}
+
+.center
+{
+margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
