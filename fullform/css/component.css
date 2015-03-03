@@ -416,7 +416,7 @@ button.fs-continue,
 }
 
 .fs-fields input.fs-mark {
-	padding-left: 1em;
+	/*padding-left: 1em;*/
 	background-image: url(../img/dollar.svg);
 	background-position: 0% 0.15em;
 	background-size: auto 75%;
@@ -516,7 +516,7 @@ button.fs-continue,
 	top: 0;
 	width: 0%;
 	height: 0.5em;
-	background: #fffed8;
+	background: #034E63;
 	-webkit-transition: width 0.3s ease-in-out;
 	transition: width 0.3s ease-in-out;
 }

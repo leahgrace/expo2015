@@ -285,7 +285,8 @@
 				classie.remove( currentFld, 'fs-hide' );
 
 				this.focus();
-
+				animateCheckboxes();
+				
 				if( self.isLastStep ) {
 					// show the complete form and hide the controls
 					self._hideCtrl( self.ctrlNav );
@@ -477,8 +478,9 @@
 
 /* Start JQuery AJAX */
 $('.fs-submit').click(function() {
-	alert("Should be success...")
-	$('.container').load("survey_submit.php");
+	var queryString = $('#myform').serialize();
+	//alert($('#myform').serialize());
+	$('.container').load("survey_submit.php", queryString);
 });
 
 

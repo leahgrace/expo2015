@@ -1,7 +1,11 @@
 <?php
+
    // Import the constants file. This imports DATABASEADDRESS, DATABASEUSER, DATABASEPASS, and DATABASENAME
-   requires("constants.php");
-   
+   require('constants.php');
+
+   parse_str($_SERVER['QUERY_STRING'], $queryStringArray);
+
+
    $database = mysqli_connect(DATABASEADDRESS,DATABASEUSER,DATABASEPASS);
 
    if (mysqli_connect_errno())
@@ -11,10 +15,19 @@
      
    @ $database->select_db(DATABASENAME) or database_down();
    
-   $query = "INSERT INTO table_name (column1, column2, column3) VALUES (?, ?, ?);";
-   $statement = $database->prepare($query);
-   $statement->bind_param("sss", $_GET['1'], $_GET['2'], $_GET['3']);
-   $statement->execute();  
+   foreach($queryStringArray as $question_id => $response) {
+      //echo "Key=" . $question_id . ", Value=" . $response;
+      //echo "<br>";
+      if($question_id != "") 
+      {
+         $query = "INSERT INTO response (question_id, response, response_date) VALUES (?, ?, NOW());";
+         $statement = $database->prepare($query);
+         $statement->bind_param("ss", $question_id, $response);
+         $statement->execute();
+      }
+   }
 
    mysqli_close($database);
+
+   echo "Successfully stored responses."
 ?>
