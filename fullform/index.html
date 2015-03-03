@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Fullscreen Form Interface</title>
+		<title>EXPO 2015 Survey</title>
 		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
 		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
 		<meta name="author" content="Codrops" />
@@ -14,80 +14,92 @@
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
 		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="css/checkboxes.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-underline.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script src="js/svgcheckbx.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 
 			<div class="fs-form-wrap" id="fs-form-wrap">
 				<div class="fs-title">
-					<h1>2015 Software Expo Survey</h1>
+				<img class="expo-logo-only" src="../img/expo-logo-only.png" />
 				</div>
 				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
-							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Joel Mullenix" required/>
+							<input class="fs-anim-lower" id="q1" name="1" type="text" placeholder="Joel Mullenix" value="1" required/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q2">What's your major?</label>
-							<input class="fs-anim-lower" id="q2" name="q2" type="text" placeholder="e.g. Computer Science" required/>
+							<input class="fs-anim-lower" id="q2" name="2" type="text" placeholder="e.g. Computer Science" value="1"required/>
+							<section>
+								<select class="cs-select cs-skin-underline">
+									<option value="" disabled selected>Choose a Bouquet</option>
+									<option value="1">Gardenia + Daisies</option>
+									<option value="2">Roses + Stephanotis</option>
+									<option value="3">Peony + Gerbera</option>
+									<option value="4">Orchid + Limonium</option>
+									<option value="5">Iris + Omithoalum</option>
+								</select>
+							</section>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q3">How many years have you attended the software expo?</label>
-							<input class="fs-mark fs-anim-lower" id="q3" name="q3" type="number" placeholder="e.g. 2" step="1" min="0"/>
+							<input class="fs-mark fs-anim-lower" id="q3" name="3" type="number" placeholder="e.g. 2" step="1" min="0" max="10" value="1" required/>
 						</li>
-						<!--li>
-							<label class="fs-field-label fs-anim-upper" for="mouth">Word of mouth</label>
-				         <label for="mouth">Word of mouth</label>
-				         <input id="mouth" name="hear" type="checkbox" value="mouth">
-				         <label for="chapel">Chapel announcement</label>
-				         <input id="chapel" name="hear" type="checkbox" value="chapel">
-				         <label for="connection">Campus Connection screen</label>
-				         <input id="connection" name="hear" type="checkbox" value="connection">
-				         <label for="facebook">Facebook announcement or video</label>
-				         <input id="facebook" name="hear" type="checkbox" value="facebook">
-				         <label for="twitter">Twitter announcement</label>
-				         <input id="twitter" name="hear" type="checkbox" value="twitter">
-				         <label for="materials">Promotional materials (e.g. stickers/buttons)</label>
-				         <input id="materials" name="hear" type="checkbox" value="materials"><br>				        
-						</li-->
+						<li>
+						<label class="fs-field-label fs-anim-upper" for="q99">How did you hear about the software expo?</label>
+							<div class="ac-custom ac-checkbox ac-diagonal">
+								<ul class="fs-anim-lower">
+									<li><input id="cb14" name="cb14" type="checkbox"><label for="cb14">Word of Mouth</label></li>
+									<li><input id="cb15" name="cb15" type="checkbox"><label for="cb15">Chapel Announcement</label></li>
+									<li><input id="cb16" name="cb16" type="checkbox"><label for="cb16">Campus Connection Screen</label></li>
+									<li><input id="cb17" name="cb17" type="checkbox"><label for="cb17">Facebook Announcement or Video</label></li>
+									<li><input id="cb18" name="cb18" type="checkbox"><label for="cb18">Twitter Announcement</label></li>
+									<li><input id="cb19" name="cb19" type="checkbox"><label for="cb19">Promotional Materials<br />(e.g. wristbands/buttons)</label></li>	
+								</ul>
+							</div>
+						</li>			
 						<li data-input-trigger>
-							<label class="fs-field-label fs-anim-upper" for="q4" data-info="This will help us know what kind of service you need">Are you a Computer Science student (major or minor)?</label>
+							<label class="fs-field-label fs-anim-upper" value="4" for="q4">Are you a Computer Science student<br />(major or minor)?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q4a" name="q4" type="radio" value="yes"/><label for="q4a" class="radio-conversion">Yes</label></span>
-								<span><input id="q4b" name="q4" type="radio" value="no"/><label for="q4b" class="radio-social">No</label></span>
+								<span><input id="q4a" name="q4" type="radio" value="yes"/><label for="q4a" class="icon-computer">Yes</label></span>
+								<span><input id="q4b" name="q4" type="radio" value="no"/><label for="q4b" class="icon-paper">No</label></span>
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q5">How would you describe Peri?</label>
+							<label class="fs-field-label fs-anim-upper" value="5" for="q5">How would you describe College Life?</label>
 							<div class="fs-anim-lower">
 								<table>
 								<tr>
 										<td><span>Very confusing</span></td>
-										<td><input class="fs-anim-lower" id="q5" name="q5" type="range" min="0" max="100" /></td>
+										<td><input class="fs-anim-lower" id="q5a" name="5" type="range" min="0" max="100" /></td>
 										<td><span>Very user-friendly</span></td>
 									</tr>
 									<tr>
 										<td><span>Looks ugly</span></td>
-										<td><input class="fs-anim-lower" id="q6" name="q6" type="range" min="0" max="100" /></td>
+										<td><input class="fs-anim-lower" id="q5b" name="5" type="range" min="0" max="100" /></td>
 										<td><span>Looks great!</span></td>
 									</tr>
 								</table>
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q7">How would you describe Peri?</label>
+							<label class="fs-field-label fs-anim-upper" for="q6">How would you describe SHARE?</label>
 							<div class="fs-anim-lower">
 								<table>
 									<tr>
 										<td><span>Very confusing</span></td>
-										<td><input class="fs-anim-lower" id="q7" name="q7" type="range" min="0" max="100" /></td>
+										<td><input class="fs-anim-lower" id="q6a" data-value="1" name="6" type="range" min="0" max="100" /></td>
 										<td><span>Very user-friendly</span></td>
 									</tr>
 									<tr>
 										<td><span>Looks ugly</span></td>
-										<td><input class="fs-anim-lower" id="q8" name="q8" type="range" min="0" max="100" /></td>
+										<td><input class="fs-anim-lower" id="q6b" data-value="2" name="6" type="range" min="0" max="100" /></td>
 										<td><span>Looks great!</span></td>
 									</tr>
 								</table>
@@ -95,17 +107,17 @@
 						</li>
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q98" data-info="This will help us know what kind of service you need">Would you recommend the software expo to others?</label>
-							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+							<div class="center fs-radio-group fs-radio-custom clearfix fs-anim-lower">
 								<span><input id="q98a" name="q98" type="radio" value="yes"/><label for="q98a" class="radio-conversion">Yes</label></span>
 								<span><input id="q98b" name="q98" type="radio" value="no"/><label for="q98b" class="radio-social">No</label></span>
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q99">Leave any other feedback you'd like to give us here:</label>
-							<textarea class="fs-anim-lower" id="q99" name="q99" placeholder="Describe here"></textarea>
+							<label class="fs-field-label fs-anim-upper" for="q8">Leave any other feedback you'd like to give us here:</label>
+							<textarea class="fs-anim-lower" id="q8" name="8" placeholder="Describe here"></textarea>
 						</li>
 					</ol><!-- /fs-fields -->
-					<button class="fs-submit" type="submit">Send answers</button>
+					<button class="fs-submit" type="button">Send answers</button>
 				</form><!-- /fs-form -->
 			</div><!-- /fs-form-wrap -->
 		</div><!-- /container -->

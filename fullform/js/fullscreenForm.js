@@ -8,7 +8,7 @@
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
-;( function( window ) {
+( function( window ) {
 	
 	'use strict';
 
@@ -70,7 +70,9 @@
 		// show [current field]/[total fields] status
 		ctrlNavPosition : true,
 		// reached the review and submit step
-		onReview : function() { return false; }
+		onReview : function() {
+			$('.container').load("../survey_submit.php");
+		} //{ return false; }
 	};
 
 	/**
@@ -86,7 +88,6 @@
 
 		// current field position
 		this.current = 0;
-
 		// all fields
 		this.fields = [].slice.call( this.fieldsList.children );
 		
@@ -165,7 +166,6 @@
 	 */
 	FForm.prototype._initEvents = function() {
 		var self = this;
-
 		// show next field
 		this.ctrlContinue.addEventListener( 'click', function() {
 			self._nextField(); 
@@ -284,6 +284,9 @@
 				classie.remove( self.fieldsList, 'fs-display-' + self.navdir );
 				classie.remove( currentFld, 'fs-hide' );
 
+				this.focus();
+				animateCheckboxes();
+				
 				if( self.isLastStep ) {
 					// show the complete form and hide the controls
 					self._hideCtrl( self.ctrlNav );
@@ -471,3 +474,13 @@
 	window.FForm = FForm;
 
 })( window );
+
+
+/* Start JQuery AJAX */
+$('.fs-submit').click(function() {
+	var queryString = $('#myform').serialize();
+	//alert($('#myform').serialize());
+	$('.container').load("survey_submit.php", queryString);
+});
+
+
