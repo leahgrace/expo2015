@@ -285,7 +285,8 @@
 				classie.remove( currentFld, 'fs-hide' );
 
 				this.focus();
-
+				animateCheckboxes();
+				
 				if( self.isLastStep ) {
 					// show the complete form and hide the controls
 					self._hideCtrl( self.ctrlNav );
