@@ -890,10 +890,3 @@ input[type=text]::-ms-clear {
 	position: relative;
 	width: 11%;
 }
-
-.center
-{
-margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
