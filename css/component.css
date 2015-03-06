@@ -12,7 +12,7 @@ html, body,
 }
 
 body {
-	overflow-y: scroll;
+	overflow-y: hidden;
 	background: #333;
 }
 
@@ -61,7 +61,6 @@ body {
 .side-left {
 	left: 0;
 	background: #034E63;
-	/*background: #001E52;*/
 	color: #FFFFFF;
 	outline: 1px solid #8ac97a; /* avoid gap */
 }
@@ -69,7 +68,6 @@ body {
 .side-right {
 	right: 0;
 	background: #FFFFFF;
-	/*background: #FFFFFF;*/
 	color: #034E63;
 	outline: 1px solid #054d63; /* avoid gap */
 }
@@ -452,8 +450,6 @@ body {
 }
 
 
-
-
 /* Begin for link animations */
 *,
 *:after,
@@ -640,9 +636,9 @@ a.splash-arrow:hover {
 	padding: 0.8em;
 }
 .bio-content h4 {
-	display: inline;
+	display: block;
 	white-space: nowrap;
 	position: relative;
-	padding: 220px;
+	padding: 0 220px;
 	font-style: italic;
 }
