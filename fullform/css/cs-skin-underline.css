@@ -11,8 +11,8 @@
 
 div.cs-skin-underline {
 	background: transparent;
-	font-size: 1.8em;
-	max-width: 400px;
+	font-size: 1em;
+	max-width: 959px;
 }
 
 @media screen and (max-width: 30em) {
@@ -21,8 +21,7 @@ div.cs-skin-underline {
 
 .cs-skin-underline > span {
 	padding: 0.5em 3em 0.5em 0.5em;
-	border-bottom: 3px solid #000;
-	border-color: inherit;
+	border-bottom: 1px solid #8AC97A;
 	font-weight: bold;
 }
 
@@ -42,7 +41,7 @@ div.cs-skin-underline {
 }
 
 .cs-skin-underline .cs-options {
-	background: #bbc7c8;
+	background: #D8D9DA;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
 	transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
@@ -52,6 +51,7 @@ div.cs-skin-underline {
 	opacity: 1;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
+	height:300px;
 }
 
 .cs-skin-underline ul span {
@@ -143,6 +143,6 @@ div.cs-skin-underline {
 .cs-skin-underline .cs-options li span:hover,
 .cs-skin-underline .cs-options li.cs-focus span,
 .cs-skin-underline li.cs-selected span {
-	color: #566473;
+	color: #8AC97A;
 	background: transparent;
 }

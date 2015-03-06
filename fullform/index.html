@@ -33,23 +33,29 @@
 							<label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
 							<input class="fs-anim-lower" id="q1" name="1" type="text" placeholder="Joel Mullenix" value="1" required/>
 						</li>
-						<li>
+						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q2">What's your major?</label>
-							<input class="fs-anim-lower" id="q2" name="2" type="text" placeholder="e.g. Computer Science" value="1"required/>
-							<section>
-								<select class="cs-select cs-skin-underline">
-									<option value="" disabled selected>Choose a Bouquet</option>
-									<option value="1">Gardenia + Daisies</option>
-									<option value="2">Roses + Stephanotis</option>
-									<option value="3">Peony + Gerbera</option>
-									<option value="4">Orchid + Limonium</option>
-									<option value="5">Iris + Omithoalum</option>
-								</select>
-							</section>
+							<select size="5" class="cs-select cs-skin-underline fs-anim-lower" >
+								<option value="" disabled selected>Choose yours</option>
+								<option value="1">Gardenia + Daisies</option>
+								<option value="2">Roses + Stephanotis</option>
+								<option value="3">Peony + Gerbera</option>
+								<option value="4">Orchid + Limonium</option>
+								<option value="5">Iris + Omithoalum</option>
+								<option value="6">Iris + Omithoalum</option>
+								<option value="7">Iris + Omithoalum</option>
+								<option value="8">Iris + Omithoalum</option>
+								<option value="9">Iris + Omithoalum</option>
+								<option value="10">Iris + Omithoalum</option>
+								<option value="11">Iris + Omithoalum</option>
+								<option value="12">Iris + Omithoalum</option>
+								<option value="13">Iris + Omithoalum</option>
+								<option value="14">Iris + Omithoalum</option>
+							</select>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q3">How many years have you attended the software expo?</label>
-							<input class="fs-mark fs-anim-lower" id="q3" name="3" type="number" placeholder="e.g. 2" step="1" min="0" max="10" value="1" required/>
+							<input class="fs-anim-lower" id="q3" name="3" type="number" placeholder="e.g. 2" step="1" min="0" max="10" value="1"/>
 						</li>
 						<li>
 						<label class="fs-field-label fs-anim-upper" for="q99">How did you hear about the software expo?</label>
@@ -67,8 +73,8 @@
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" value="4" for="q4">Are you a Computer Science student<br />(major or minor)?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q4a" name="q4" type="radio" value="yes"/><label for="q4a" class="icon-computer">Yes</label></span>
-								<span><input id="q4b" name="q4" type="radio" value="no"/><label for="q4b" class="icon-paper">No</label></span>
+								<span><input id="q4a" name="q4" type="radio" value="yes"/><label for="q4a" class="icon-yes">Yes</label></span>
+								<span><input id="q4b" name="q4" type="radio" value="no"/><label for="q4b" class="icon-no">No</label></span>
 							</div>
 						</li>
 						<li>
@@ -89,17 +95,17 @@
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q6">How would you describe SHARE?</label>
+						<label class="fs-field-label fs-anim-upper" for="q6">How would you describe SHARE?</label>
 							<div class="fs-anim-lower">
 								<table>
 									<tr>
 										<td><span>Very confusing</span></td>
-										<td><input class="fs-anim-lower" id="q6a" data-value="1" name="6" type="range" min="0" max="100" /></td>
+										<td><input class="bar" id="q6a" data-value="50" name="6" type="range" min="0" max="100" /></td>
 										<td><span>Very user-friendly</span></td>
 									</tr>
 									<tr>
 										<td><span>Looks ugly</span></td>
-										<td><input class="fs-anim-lower" id="q6b" data-value="2" name="6" type="range" min="0" max="100" /></td>
+										<td><input class="fs-anim-lower" id="q6b" data-value="50" name="6" type="range" min="0" max="100" /></td>
 										<td><span>Looks great!</span></td>
 									</tr>
 								</table>
@@ -108,8 +114,8 @@
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q98" data-info="This will help us know what kind of service you need">Would you recommend the software expo to others?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q98a" name="q98" type="radio" value="yes"/><label for="q98a" class="radio-conversion">Yes</label></span>
-								<span><input id="q98b" name="q98" type="radio" value="no"/><label for="q98b" class="radio-social">No</label></span>
+								<span><input id="q98a" name="q98" type="radio" value="yes"/><label for="q98a" class="icon-yes">Yes</label></span>
+								<span><input id="q98b" name="q98" type="radio" value="no"/><label for="q98b" class="icon-no">No</label></span>
 							</div>
 						</li>
 						<li>

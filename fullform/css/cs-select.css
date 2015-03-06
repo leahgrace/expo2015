@@ -74,6 +74,7 @@ div.cs-select:focus {
 .cs-select .cs-options {
 	position: absolute;
 	overflow: hidden;
+	overflow-y: scroll;
 	width: 100%;
 	background: #fff;
 	visibility: hidden;
