@@ -16,6 +16,7 @@
 
 html, body, .container {
 	height: 100%;
+	overflow: auto;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
 	font-size: 1em;
 	font-family: 'Raleway', Arial, sans-serif;
 	overflow: hidden;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	min-height: 590px;
 }
 
@@ -132,4 +133,8 @@ a:hover, a:focus {
 	padding: 0.5em 0 0.3em;
 	max-width: 300px;
 	text-align: left;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
