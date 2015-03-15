@@ -478,9 +478,11 @@
 
 /* Start JQuery AJAX */
 $('.fs-submit').click(function() {
-	var queryString = $('#myform').serialize();
-	//alert($('#myform').serialize());
-	$('.container').load("surveySubmit.php", queryString);
+	var preJSON = $("#myform").serializeArray();
+	var queryString = JSON.stringify(preJSON);
+	alert(queryString);
+
+	$('.container').load("surveySubmit.php", { 'json' : queryString});
 });
 
 
