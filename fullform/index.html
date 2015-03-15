@@ -31,11 +31,11 @@
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
-							<input class="fs-anim-lower" id="q1" name="1" type="text" placeholder="Joel Mullenix" value="1" required/>
+							<input class="fs-anim-lower" id="1" name="1" type="text" placeholder="Joel Mullenix" value="1" required/>
 						</li>
 						<li data-input-trigger>
 							<label class="fs-field-label fs-anim-upper" for="q2">What's your major?</label>
-							<select size="5" class="cs-select cs-skin-underline fs-anim-lower" >
+							<select name="2" size="5" class="cs-select cs-skin-underline fs-anim-lower" >
 								<option value="" disabled selected>Choose yours</option>
 								<option value="1">Gardenia + Daisies</option>
 								<option value="2">Roses + Stephanotis</option>
@@ -55,40 +55,47 @@
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q3">How many years have you attended the software expo?</label>
-							<input class="fs-anim-lower" id="q3" name="3" type="number" placeholder="e.g. 2" step="1" min="0" max="10" value="1"/>
+							<input class="fs-anim-lower" id="3" name="3" type="number" placeholder="e.g. 2" step="1" min="0" max="10" value="1"/>
 						</li>
 						<li>
-						<label class="fs-field-label fs-anim-upper" for="q99">How did you hear about the software expo?</label>
+						<label class="fs-field-label fs-anim-upper" for="4">How did you hear about the software expo?</label>
 							<div class="ac-custom ac-checkbox ac-diagonal">
 								<ul class="fs-anim-lower">
-									<li><input id="cb14" name="cb14" type="checkbox"><label for="cb14">Word of Mouth</label></li>
-									<li><input id="cb15" name="cb15" type="checkbox"><label for="cb15">Chapel Announcement</label></li>
-									<li><input id="cb16" name="cb16" type="checkbox"><label for="cb16">Campus Connection Screen</label></li>
-									<li><input id="cb17" name="cb17" type="checkbox"><label for="cb17">Facebook Announcement or Video</label></li>
-									<li><input id="cb18" name="cb18" type="checkbox"><label for="cb18">Twitter Announcement</label></li>
-									<li><input id="cb19" name="cb19" type="checkbox"><label for="cb19">Promotional Materials<br />(e.g. wristbands/buttons)</label></li>	
+									<li><input value="14" name="4" type="checkbox"><label for="cb14">Word of Mouth</label></li>
+									<li><input value="15" name="4" type="checkbox"><label for="cb15">Chapel Announcement</label></li>
+									<li><input value="16" name="4" type="checkbox"><label for="cb16">Campus Connection Screen</label></li>
+									<li><input value="17" name="4" type="checkbox"><label for="cb17">Facebook Announcement or Video</label></li>
+									<li><input value="18" name="4" type="checkbox"><label for="cb18">Twitter Announcement</label></li>
+									<li><input value="19" name="4" type="checkbox"><label for="cb19">Promotional Materials<br />(e.g. wristbands/buttons)</label></li>	
 								</ul>
 							</div>
 						</li>			
 						<li data-input-trigger>
-							<label class="fs-field-label fs-anim-upper" value="4" for="q4">Are you a Computer Science student<br />(major or minor)?</label>
+							<label class="fs-field-label fs-anim-upper" for="5">Are you a Computer Science student<br />(major or minor)?</label>
 							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-								<span><input id="q4a" name="q4" type="radio" value="yes"/><label for="q4a" class="icon-yes">Yes</label></span>
-								<span><input id="q4b" name="q4" type="radio" value="no"/><label for="q4b" class="icon-no">No</label></span>
+								<span><input name="5" type="radio" value="2"/><label for="q4a" class="icon-yes">Yes</label></span>
+								<span><input name="5" type="radio" value="1"/><label for="q4b" class="icon-no">No</label></span>
 							</div>
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" value="5" for="q5">How would you describe College Life?</label>
+							<label class="fs-field-label fs-anim-upper" for="6">How would you describe College Life's User Experience?</label>
 							<div class="fs-anim-lower">
 								<table>
-								<tr>
+									<tr>
 										<td><span>Very confusing</span></td>
-										<td><input class="fs-anim-lower" id="q5a" name="5" type="range" min="0" max="100" /></td>
+										<td><input class="fs-anim-lower" id="3" name="6" type="range" min="0" max="100" /></td>
 										<td><span>Very user-friendly</span></td>
 									</tr>
+								</table>
+							</div>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="6">How would you describe College Life's Design?</label>
+							<div class="fs-anim-lower">
+								<table>
 									<tr>
 										<td><span>Looks ugly</span></td>
-										<td><input class="fs-anim-lower" id="q5b" name="5" type="range" min="0" max="100" /></td>
+										<td><input class="fs-anim-lower" id="2" name="6" type="range" min="0" max="100" /></td>
 										<td><span>Looks great!</span></td>
 									</tr>
 								</table>
@@ -150,5 +157,6 @@
 				} );
 			})();
 		</script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
