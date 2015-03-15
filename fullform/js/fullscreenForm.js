@@ -480,7 +480,7 @@
 $('.fs-submit').click(function() {
 	var queryString = $('#myform').serialize();
 	//alert($('#myform').serialize());
-	$('.container').load("survey_submit.php", queryString);
+	$('.container').load("surveySubmit.php", queryString);
 });
 
 
