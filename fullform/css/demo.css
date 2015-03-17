@@ -16,7 +16,7 @@
 
 html, body, .container {
 	height: 100%;
-	overflow: hidden;
+	overflow: auto;
 }
 
 body {
