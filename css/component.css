@@ -12,7 +12,7 @@ html, body,
 }
 
 body {
-	overflow-y: hidden;
+	overflow: auto;
 	background: #333;
 }
 
@@ -188,7 +188,7 @@ body {
 
 /* Pages */
 .page {
-	position: relative;
+	position: absolute;
 	top: 0;
 	overflow: auto;
 	min-height: 100%;
@@ -593,7 +593,7 @@ a.splash-arrow {
 	-webkit-animation-delay: 1.5s;
 	-moz-animation-delay: 1.5s;
 	animation-delay: 1.5s;
-	border: 3px solid white;
+	border: 3px solid #034E63;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
@@ -642,4 +642,49 @@ a.splash-arrow:hover {
 	padding: 0 220px;
 	margin: 5px;
 	font-style: italic;
+}
+
+/** Buttons **/
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 25px 80px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Button 6c */
+.btn-6c {
+	border: 4px solid #FFFFFF;
+	border-radius: 60px;
+	background: #034E63;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.btn-6c:hover {
+	border: solid #034E63;
+	background: #FFFFFF;
+	color: #034E63;
 }
