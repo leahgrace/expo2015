@@ -74,11 +74,13 @@ $(window).scroll(function() {
 		leftSide.querySelector( 'span.meet-devs' ).addEventListener( eventtype, function( ev ) {
 			reset();
 			classie.add( splitlayout, 'open-left' );
+			$("#btnSurvey").hide();
 		} );
 
 		leftSide.querySelector( 'img.meet-devs' ).addEventListener( eventtype, function( ev ) {
 			reset();
 			classie.add( splitlayout, 'open-left' );
+			$("#btnSurvey").hide();
 		} );
 
 		rightSide.querySelector( 'div.profile' ).addEventListener( eventtype, function( ev ) {
@@ -88,11 +90,13 @@ $(window).scroll(function() {
 		rightSide.querySelector( 'span.meet-devs' ).addEventListener( eventtype, function( ev ) {
 			reset();
 			classie.add( splitlayout, 'open-right' );
+			$("#btnSurvey").hide();
 		} );
 
 		rightSide.querySelector( 'img.meet-devs' ).addEventListener( eventtype, function( ev ) {
 			reset();
 			classie.add( splitlayout, 'open-right' );
+			$("#btnSurvey").hide();
 		} );
 
 		// back to intro
@@ -100,6 +104,7 @@ $(window).scroll(function() {
 		var onEndTransFn = function() {
 				this.removeEventListener( transEndEventName, onEndTransFn );
 				classie.add( splitlayout, 'reset-layout' );
+				$("#btnSurvey").show();
 				document.body.scrollTop = document.documentElement.scrollTop = 0;
 			},
 			backToIntro = function( ev ) {
