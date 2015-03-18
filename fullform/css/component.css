@@ -526,7 +526,7 @@ button.fs-continue,
 .fs-numbers {
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 3%;
 	overflow: hidden;
 	color: rgba(0,0,0,0.4);
 	margin: 40px;
