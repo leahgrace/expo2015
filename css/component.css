@@ -1,3 +1,8 @@
+/* Dev Picture Animations */
+.meet-devs:hover {
+	opacity: 100% !important;
+}
+
 /* Embedded fonts */
 @font-face{
 	font-family: myQuicksand;
@@ -97,6 +102,17 @@ body {
 	max-width: 100%;
 	border-radius: 50%;
 	opacity: 0.6;
+}
+
+.profile-logo {
+	margin: 0 auto;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+}
+
+.profile-logo img {
+	max-width: 100%;
 }
 
 .intro-content h1 > span {
