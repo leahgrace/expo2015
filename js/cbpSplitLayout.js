@@ -67,7 +67,7 @@ $(window).scroll(function() {
 		}
 		classie.add( splitlayout, 'reset-layout' );
 
-		leftSide.querySelector( 'div.profile' ).addEventListener( eventtype, function( ev ) {
+		leftSide.querySelector( 'div.profile-logo' ).addEventListener( eventtype, function( ev ) {
 			window.location="http://cslinux/peri";
 		} );
 
@@ -77,14 +77,14 @@ $(window).scroll(function() {
 			$("#btnSurvey").hide();
 		} );
 
-		leftSide.querySelector( 'img.meet-devs' ).addEventListener( eventtype, function( ev ) {
+		leftSide.querySelector( 'div.meet-devs' ).addEventListener( eventtype, function( ev ) {
 			reset();
 			classie.add( splitlayout, 'open-left' );
 			$("#btnSurvey").hide();
 		} );
 
-		rightSide.querySelector( 'div.profile' ).addEventListener( eventtype, function( ev ) {
-			window.location="http://172.16.222.246/gamefoo";
+		rightSide.querySelector( 'div.profile-logo' ).addEventListener( eventtype, function( ev ) {
+			window.location="http://jacportfolio.com/gamefoo";
 		} );
 
 		rightSide.querySelector( 'span.meet-devs' ).addEventListener( eventtype, function( ev ) {
@@ -93,7 +93,7 @@ $(window).scroll(function() {
 			$("#btnSurvey").hide();
 		} );
 
-		rightSide.querySelector( 'img.meet-devs' ).addEventListener( eventtype, function( ev ) {
+		rightSide.querySelector( 'div.meet-devs' ).addEventListener( eventtype, function( ev ) {
 			reset();
 			classie.add( splitlayout, 'open-right' );
 			$("#btnSurvey").hide();
