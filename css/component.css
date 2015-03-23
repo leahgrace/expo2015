@@ -107,8 +107,13 @@ body {
 .profile-logo {
 	margin: 0 auto;
 	width: 350px;
-	height: 350px;
+	height: 100%;
 	border-radius: 50%;
+}
+
+.profile-logo:hover{
+opacity: .75;
+
 }
 
 .profile-logo img {
@@ -700,7 +705,7 @@ a.splash-arrow:hover {
 }
 
 .btn-6c:hover {
-	border: solid #034E63;
+	border: 4px solid #034E63;
 	background: #FFFFFF;
 	color: #034E63;
 }
