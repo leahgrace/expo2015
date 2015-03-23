@@ -482,7 +482,13 @@ $('.fs-submit').click(function() {
 	var queryString = JSON.stringify(preJSON);
 	alert(queryString);
 
-	$('.container').load("surveySubmit.php", { 'json' : queryString});
+	$('.fs-form-wrap').hide();
+	$(".main ul").css("display", "inline");
+	$(".main ul").addClass("bokeh");
+	//$('.container').load("surveySubmit.php", { 'json' : queryString});
+	setTimeout(function(){
+		$('.container').load("survey_submit.php", { 'json' : queryString});
+	}, 8000);
 });
 
 
