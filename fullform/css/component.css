@@ -1014,3 +1014,20 @@ input[type="range"]:hover ~ #rangevalue,input[type="range"]:active ~ #rangevalue
 	transition: all 0.5s ease;
 	top: -95px;
 }
+
+.expo-submit{
+	position: absolute;
+    right: 0px;
+    width: 100%;
+    text-align:center;
+    vertical-align:middle;
+    top:25%;
+}
+
+.expo-submit h2{color:#034E63;}
+.expo-submit h3{color:#8AC97A;}
+.expo-submit a{font-weight:bold;}
+.expo-submit a:hover, a:focus {
+	color: rgba(0,0,0,0.3);
+	text-decoration:underline;
+}
