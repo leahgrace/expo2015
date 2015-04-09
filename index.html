@@ -6,8 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title>SEI | Software Expo 2015</title>
 		<meta name="description" content="Software Engineers Incorporated 2015 Software Expo" />
-		<meta name="keywords" content="website template, layout, css3, transition, effect, split, dual, two sides, portfolio" />
-		<meta name="author" content="Codrops" />
 		<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
@@ -15,13 +13,19 @@
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	</head>
 	<body>
-			<a href="#" class="splash-arrow fade-in"><img src="img/down-arrow-blue.png" alt="" /></a>
-		</div-->
+		<div class="overlay2">
+			<div class="presurvey">
+				<h1>Have you tried out the software yet?</h1>
+				<p>If not, we'd like you to try it out before you take our survey!</p>
+				<a href="javascript:$('.overlay2').hide();">Try out the software</a>
+				<a href="fullform/index.php">Continue to the survey</a>
+			</div>
+		</div>
 		<div class="container">
 			<div id="splitlayout" class="splitlayout">
 				<div class="intro">
 					<div class="intro-content" style="position:absolute;margin-top:0;width:20%;z-index:499">
-						<button id="btnSurvey" type="button" class="btn btn-6 btn-6c" onclick="document.location.href='fullform/index.html'">TAKE THE SURVEY</button>
+						<button id="btnSurvey" type="button" class="btn btn-6 btn-6c" onclick="javascript:$('.overlay2').show();">TAKE THE SURVEY</button>
 					</div>
 					<div class="side side-left">
 						<div class="intro-content">
@@ -66,7 +70,7 @@
 							<div class="bio-content">
 								<img src="img/Team Members/Dory.jpg" alt="Dory">
 								<h2>Dory Neal</h2>
-								<h4>Title</h4>
+								<h4>Research and Development</h4>
 							</div>
 							<p>Dory is an avid bookworm from Greenville, Texas who loves cats and the color green. Growing up she spent much of her free time playing computer games with her siblings, and helping her dad fix computers. Working with her dad on computers throughout her childhood instilled a love of the computer hardware aspect of computer science. Despite not learning any programming before coming to college, Dory has learned to love programming and the challenge of solving problems during her four years here at PCC. Her current plan is to go back home and get a job with L-3 Communications Center and gain experience to do whatever the Lord would have her do.</p>
 							<p style="font-style:italic">“The most wasted of all days is one without laughter.” ~ E.E. Cummings</p>
